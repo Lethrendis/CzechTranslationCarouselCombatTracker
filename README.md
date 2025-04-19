@@ -1,10 +1,10 @@
 
 # CzechCarouselCombatTracker
 
-Czech translation of CarouselCombatTracker version 3.1.7
+Czech translation of CarouselCombatTracker version 3.1.9
 
 ## Popis
-Tento modul poskytuje českou lokalizaci pro CarouselCombatTracker verze 3.1.7. Obsahuje překlady základních textů aplikace.
+Tento modul poskytuje českou lokalizaci pro CarouselCombatTracker verze 3.1.9. Obsahuje překlady základních textů aplikace.
 
 ## Instalace
 Pro instalaci modulu obvyklým upůsobem můžeš použít následující odkaz ve Foundry VTT:

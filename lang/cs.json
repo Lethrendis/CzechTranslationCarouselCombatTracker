@@ -4,7 +4,7 @@
         "combatConfig": {
             "portraitResource": {
                 "label": "Lišta portrétu",
-                "hint": "Lišta zdrojů, která bude zobrazena jako překrytí nad portrétem. Chceš-li ji deaktivovat, nastav na 'Žádné'."
+                "hint": "Lišta zdrojů, která bude zobrazena jako překrytí nad portrétem. Chceš-li ji deaktivovat, nastav na 'žádné'."
             }
         },
         "settings": {
@@ -148,7 +148,7 @@
             },
             "portraitImage": {
                 "name": "Obrázek portrétu",
-                "hint": "Zda jako portrét použít obrázek aktéra, nebo tokenu.",
+                "hint": "Zda jako portrét použít buď obrázek aktéra, nebo tokenu.",
                 "choices": {
                     "actor": "Aktér",
                     "token": "Token"

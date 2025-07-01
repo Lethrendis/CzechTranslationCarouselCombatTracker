@@ -84,15 +84,15 @@
                 }
             },
             "showDispositionColor": {
-                "name": "Zobrazení postoje",
+                "name": "Zobrazovat postoje?",
                 "hint": "Zobrazí v dolním ohraničení portrétu barvu postoje vůči postavě."
             },
             "hideDefeated": {
-                "name": "Skrývání poražených",
-                "hint": "Skryje poražené bojovníky v kolotoči. Pro případ, že by s nimi bylo potřeba interagovat, budou stále viditelní ve standardním sledovači boje."
+                "name": "Skrývat poražené?",
+                "hint": "Skryje v kolotoči poražené bojovníky. Pro případ, že by s nimi bylo potřeba interagovat, budou stále viditelní ve standardním sledovači boje."
             },
             "showInitiativeOnPortrait": {
-                "name": "Zobrazení iniciativy na portrétu",
+                "name": "Zobrazovat iniciativu na portrétu?",
                 "hint": "Zobrazí v levém horním rohu portrétu hodnotu iniciativy. Iniciativu vždy můžeš vidět v popiscích!"
             },
             "portraitImageBorder": {
@@ -130,7 +130,7 @@
                 }
             },
             "playerPlayerPermission": {
-                "name": "Zobrazení informací o hráčích",
+                "name": "Zobrazovat informace o hráčích?",
                 "hint": "Umožní všem hráčům vidět sledované atributy, informace v popiscích a systémové ikony ostatních hráčů."
             },
             "displayDescriptions": {
@@ -178,11 +178,11 @@
                 }
             },
             "hideFirstRound": {
-                "name": "Skrývání do prvního tahu",
+                "name": "Skrývat nepřátele do prvního tahu?",
                 "hint": "Bude skrývat nepřátele, dokud v boji neprovedou svůj první tah. (Vyžaduje LibWrapper k jejich skrytí i ve standardním sledovači boje.)"
             },
             "hideEnemyInitiative": {
-                "name": "Skrývání iniciativy nepřátel",
+                "name": "Skrývat iniciativu nepřátel?",
                 "hint": "Bude skrývat iniciativu nepřátel v popiscích i na portrétu."
             },
             "attributesMenu": {

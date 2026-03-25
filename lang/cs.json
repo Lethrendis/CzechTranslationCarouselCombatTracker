@@ -1,6 +1,13 @@
 {
 "combat-tracker-dock": {
         "configureCarousel": "Nastavení kolotoče",
+        "combat-dock": {
+            "title": "Bojový kolotoč",
+            "close": "Zavřít"
+        },
+        "contextMenu": {
+            "setAsCurrent": "Nastavit jako aktuálního bojovníka"
+        },
         "combatConfig": {
             "portraitResource": {
                 "label": "Lišta portrétu",
@@ -17,6 +24,10 @@
                 }
             },
             "integration": "Integrace",
+            "floatingSize": {
+                "name": "Velikost plovoucího okna",
+                "hint": "Čím větší hodnota, tím větší bude okno. Nemá to vliv na režim 'Horizontální (ukotvený)'."
+            },
             "portraitSize": {
                 "name": "Velikost kolotoče",
                 "hint": "Maximální velikost portrétů v kolotoči. Všimni si, že pokud je na obrazovce příliš mnoho bojovníků, bude velikost portrétů automaticky zmenšena.",
@@ -30,12 +41,16 @@
                     "180px": "XXX-velká"
                 }
             },
+            "lessButtons": {
+                "name": "Méně tlačítek?",
+                "hint": "Po zaškrtnutí se bude v přehledu boje kolotoče zobrazovat méně tlačítek. Skryjí se tlačítka 'Resetovat iniciativu', 'Nastavení sledovače boje', 'Předchozí kolo', 'Další kolo'."
+            },
             "carouselStyle": {
                 "name": "Styl kolotoče",
-                "hint": "Způsob, jakým jsou portréty umístěny a pohybují se v kolotoči:\n- Kolotoč - na středu: Aktivní bojovník je ve středu kolotoče, ostatní bojovníci se kolem něj otáčejí.\n- Kolotoč - vlevo: Aktivní bojovník je vlevo v kolotoči, ostatní bojovníci se kolem něj otáčejí.\n- Bez kolotoče: Bojovníci jsou vždy zobrazeni podle pořadí iniciativy a aktivní bojovník se pohybuje, zatímco ostatní zůstávají na místě.",
+                "hint": "Způsob, jakým jsou portréty umístěny a pohybují se v kolotoči:\n- 'Kolotoč (na středu)': Aktivní bojovník je ve středu, ostatní se kolem něj otáčejí.\n- 'Kolotoč (vlevo)': Aktivní bojovník je vlevo, ostatní se kolem něj otáčejí.\n- 'Bez kolotoče': Bojovníci jsou vždy zobrazeni podle pořadí iniciativy a aktivní bojovník se pohybuje, zatímco ostatní zůstávají na místě.",
                 "choices": {
-                    "centerCarousel": "Kolotoč - na středu",
-                    "leftCarousel": "Kolotoč - vlevo",
+                    "centerCarousel": "Kolotoč (na středu)",
+                    "leftCarousel": "Kolotoč (vlevo)",
                     "basic": "Bez kolotoče"
                 }
             },
@@ -67,11 +82,14 @@
                 }
             },
             "direction": {
-                "name": "Směr",
+                "name": "Pozice",
                 "hint": "Směr pohybu kolotoče.",
                 "choices": {
                     "row": "Horizontální",
-                    "column": "Vertikální"
+                    "column": "Vertikální",
+                    "rowDocked": "Horizontální (ukotvený)",
+                    "rowFloat": "Horizontální (plovoucí)",
+                    "columnFloat": "Vertikální (plovoucí)"
                 }
             },
             "roundness": {
@@ -85,15 +103,15 @@
             },
             "showDispositionColor": {
                 "name": "Zobrazovat postoje?",
-                "hint": "Zobrazí v dolním ohraničení portrétu barvu postoje vůči postavě."
+                "hint": "Po zaškrtnutí bude v dolním ohraničení portrétu zobrazena barva postoje vůči postavě."
             },
             "hideDefeated": {
                 "name": "Skrývat poražené?",
-                "hint": "Skryje v kolotoči poražené bojovníky. Pro případ, že by s nimi bylo potřeba interagovat, budou stále viditelní ve standardním sledovači boje."
+                "hint": "Po zaškrtnutí bude kolotoč skrývat poražené bojovníky. Pro případ, že by s nimi bylo potřeba interagovat, budou stále viditelní ve standardním sledovači boje."
             },
             "showInitiativeOnPortrait": {
                 "name": "Zobrazovat iniciativu na portrétu?",
-                "hint": "Zobrazí v levém horním rohu portrétu hodnotu iniciativy. Iniciativu vždy můžeš vidět v popiscích!"
+                "hint": "Po zaškrtnutí bude v levém horním rohu portrétu zobrazena hodnota iniciativy. Iniciativu vždy můžeš vidět v popiscích!"
             },
             "portraitImageBorder": {
                 "name": "Ohraničení hráče",
@@ -131,7 +149,7 @@
             },
             "playerPlayerPermission": {
                 "name": "Zobrazovat informace o hráčích?",
-                "hint": "Umožní všem hráčům vidět sledované atributy, informace v popiscích a systémové ikony ostatních hráčů."
+                "hint": "Zaškrtnutí umožní všem hráčům vidět sledované atributy, informace v popiscích a systémové ikony ostatních hráčů."
             },
             "displayDescriptions": {
                 "name": "Zobrazení popisů",
@@ -141,10 +159,6 @@
                     "owner": "Vlastník/pozorovatel",
                     "all": "Všichni"
                 }
-            },
-            "tooltipColor": {
-                "name": "Barva popisků",
-                "hint": "Barevné schéma popisků. Lze použít jakoukoli platnou hodnotu CSS barvy (např. #ff0000, red, rgba(255,0,0,0.5) atd.). Výchozí hodnota: #888888."
             },
             "portraitImage": {
                 "name": "Obrázek portrétu",
@@ -168,6 +182,10 @@
                     "both": "Obojí"
                 }
             },
+            "hideConflictingUIs": {
+                "name": "Skrývat konfliktní UI?",
+                "hint": "Po zaškrtnutí budou po zapnutí Kolotoče automaticky skrývána ostatní UI v horní části obrazovky, aby nevznikal chaos."
+            },
             "displayName": {
                 "name": "Zobrazení jména",
                 "hint": "Zda se má zobrazovat jméno bojovníků v popiscích. 'Podle tokenu' zobrazí jméno pouze tehdy, pokud hráč může vidět jméno tokenu.",
@@ -179,11 +197,11 @@
             },
             "hideFirstRound": {
                 "name": "Skrývat nepřátele do prvního tahu?",
-                "hint": "Bude skrývat nepřátele, dokud v boji neprovedou svůj první tah. (Vyžaduje LibWrapper k jejich skrytí i ve standardním sledovači boje.)"
+                "hint": "Po zaškrtnutí budou nepřátelé skrytí, dokud v boji neprovedou svůj první tah. (Vyžaduje LibWrapper k jejich skrytí i ve standardním sledovači boje.)"
             },
             "hideEnemyInitiative": {
                 "name": "Skrývat iniciativu nepřátel?",
-                "hint": "Bude skrývat iniciativu nepřátel v popiscích i na portrétu."
+                "hint": "Po zaškrtnutí bude iniciativa nepřátel skryta v popiscích i na portrétu."
             },
             "attributesMenu": {
                 "name": "Atributy v popiscích",

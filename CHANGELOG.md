@@ -1,5 +1,5 @@
 Changelog
 
-Verze 1.1.0:
+Verze 1.2.0
 První verze modulu.
-Kompletní překlad CarouselCombatTracker 4.0.1.
+Kompletní překlad Carousel Combat Tracker 4.1.8.
